@@ -76,7 +76,6 @@ button:hover {
  display: flex;
  justify-content: center;
  align-items: center;
- margin-bottom: 20vh;
 }
 .evcnt{
  height: 40vh;
@@ -126,6 +125,9 @@ button:hover {
 .next {
  color: red;
 }
+.evcnt{
+    margin-bottom: -10vh;
+}
 
 /* Responsieve aanpassingen */
 
@@ -164,7 +166,7 @@ button:hover {
  .carousel {
    gap: 10px; /* Nog minder ruimte tussen kaarten */
  }
-}
-.evcnt{
+ .evcnt{
     margin-bottom: 10vh;
+}
 }

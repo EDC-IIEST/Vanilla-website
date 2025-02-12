@@ -7,7 +7,7 @@
   }
 
 .white{
-    margin-top: 5vh;
+    margin-top: 1vh;
     position: relative;
     min-height: 50vh;
 }
@@ -25,6 +25,9 @@
 }
 .social-box img{
     width:5vh;
+}
+.social-box img:hover{
+    transform: scale(1.4);
 }
 
 .white-box-right {

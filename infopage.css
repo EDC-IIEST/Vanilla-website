@@ -248,7 +248,7 @@ border-radius: 1vw
     .info-rightbox-text{
 font-size: 16px;
 font-weight: 400;
-color:#000000;
+color:aliceblue;
 font-family: Verdana, Geneva, Tahoma, sans-serif;
 font-style: verdana;
 margin-left: 2vw;
@@ -315,7 +315,7 @@ border-radius: 2vw;
     line-height: 2.5vh;
     letter-spacing: normal;
 font-weight: 100;
-color:#000000;
+color:white;
 margin-left: 2vw;
 margin-right: 2vw;
 margin-top: 3vh;
