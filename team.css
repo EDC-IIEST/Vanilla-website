@@ -139,7 +139,7 @@ animation-name: gradients;
 body{
 /* background: rgb(134,26,84);
 background: linear-gradient(142deg, rgba(134,26,84,1) 0%, rgba(36,66,115,1) 51%, rgba(134,26,84,1) 100%); */
-
+}
       .team-card:hover .card-button {
           background-color: var(--hover-color);
           color: var(--text-color);
@@ -238,7 +238,12 @@ margin-bottom: 10vh;
     
 }
 }
-
+@media (max-width: 480px) {
+  .cards-container {
+      grid-template-columns: repeat(1, 1fr); /* 1 column for mobile */
+      
+  }
+  }
 
 .card {
   width: 100%;
