@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/infopage.css">
+    <link rel="stylesheet" href="css/getstarted.css">
+    <link rel="stylesheet" href="css/events.css">
+    <link rel="stylesheet" href="css/ourmission.css">
+    <link rel="stylesheet" href="carousel.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<style>
+  body{
+  background: rgb(0, 4, 34);
+  }
+</style>
+</head>
+
+<body>
+
+    <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <img id="navbar-logo-image" src="logo.png" alt="logo">
+
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                  <li><a href="/">Home</a></li>
+                  <li><a href="/events.html">Events</a></li>
+                  <li><a href="/team.html">Team</a></li>
+                  <li><a href="/gallary.html">Gallery</a></li>
+                    <!-- <li><a href="/blog">Explore</a></li> -->
+
+                </ul>
+            </div>
+        </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+
+    </nav>
+
+
+<br>
+<br><br><br><br><br><br><br><br><br>
+<div class="eventhead">
+  <h1 class="Events montserrat-myFont" style="color: white; text-align: center; font-size: 4rem;">EVENTS</h1>
+</div>
+
+<link href="https://fonts.cdnfonts.com/css/graffiti-font" rel="stylesheet">
+<svg viewBox="0 0 900 200">
+  <!-- Definieer een patroon voor de tekst -->
+  <defs>
+    <pattern id="imagePattern" patternUnits="userSpaceOnUse" width="400" height="400">
+      <image href="https://cornello.eu/graffiti.jpg" x="0" y="0" width="400" height="400" />
+    </pattern>
+
+    <!-- Definieer gloedfilter -->
+    <filter id="glowFilter" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="8" result="blurred" />
+      <feOffset in="blurred" dx="0" dy="0" result="offsetBlurred" />
+      <feFlood flood-color="cyan" result="glowColor" />
+      <feComposite in="glowColor" in2="offsetBlurred" operator="in" />
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+
+
+  <!-- Tekst waarop het patroon en de gloed worden toegepast -->
+  <text id="animatedText" x="50" y="150"></text>
+</svg>
+<div class="evcnt">
+<div class="carousel-container">
+  <div class="carousel">
+    <div class="card" style="background-image: url('eventpage/1.jpg');" onclick="openLightbox('eventpage/1.jpg')">
+      <div class="content"></div>
+    </div>
+    <div class="card" style="background-image: url('eventpage/2.jpg');" onclick="openLightbox('eventpage/2.jpg')">
+      <div class="content"></div>
+    </div>
+    <div class="card" style="background-image: url('eventpage/3.jpg');" onclick="openLightbox('eventpage/3.jpg')">
+      <div class="content"></div>
+    </div>
+    <div class="card" style="background-image: url('eventpage/4.jpg');" onclick="openLightbox('eventpage/4.jpg')">
+      <div class="content"></div>
+    </div>
+    <div class="card" style="background-image: url('eventpage/5.jpg');" onclick="openLightbox('eventpage/5.jpg')">
+      <div class="content"></div>
+    </div>
+    <div class="card" style="background-image: url('eventpage/6.jpg');" onclick="openLightbox('eventpage/6.jpg')">
+      <div class="content"></div>
+    </div>
+    <div class="card" style="background-image: url('eventpage/7.jpg');" onclick="openLightbox('eventpage/7.jpg')">
+      <div class="content"></div>
+    </div>
+    <div class="card" style="background-image: url('eventpage/4.jpg');" onclick="openLightbox('eventpage/4.jpg')">
+      <div class="content"></div>
+    </div>
+    <div class="card" style="background-image: url('eventpage/3.jpg');" onclick="openLightbox('eventpage/3.jpg')">
+      <div class="content"></div>
+    </div>
+    <div class="card" style="background-image: url('eventpage/5.jpg');" onclick="openLightbox('eventpage/5.jpg')">
+      <div class="content"></div>
+    </div>
+   
+    
+  </div>
+  <button class="prev" onclick="moveCarousel(-1)">&#10094;</button>
+  <button class="next" onclick="moveCarousel(1)">&#10095;</button>
+</div>
+
+<!-- Lightbox overlay -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img" src="" alt="Large view" />
+</div>
+</div>
+
+<script>
+  // js is for the animation loop for the strokes
+const textElement = document.getElementById("animatedText");
+
+function restartAnimation() {
+  textElement.style.transition = "none";
+  textElement.style.strokeDashoffset = "0";
+
+  setTimeout(() => {
+    textElement.style.transition = "stroke-dashoffset 3s ease";
+    textElement.style.strokeDashoffset = "1000";
+  }, 50);
+}
+
+// Start de animatie direct en in een loop
+restartAnimation();
+setInterval(restartAnimation, 10000);
+
+// js is for the animation loop for the cards
+
+let index = 0;
+const totalCards = 10;
+const carousel = document.querySelector(".carousel");
+
+// Initial 3D-positioning of the cards
+const angleIncrement = 360 / totalCards; // 36 degrees per card
+const distance = 350; // Verhoog de afstand tussen de kaarten
+
+// Set each card's position in 3D space
+document.querySelectorAll(".card").forEach((card, i) => {
+  card.style.transform = `rotateY(${
+    i * angleIncrement
+  }deg) translateZ(${distance}px)`;
+});
+
+function moveCarousel(direction) {
+  index += direction;
+
+  if (index < 0) index = totalCards - 1; // Als je achteruit gaat, begin bij de laatste kaart
+  if (index >= totalCards) index = 0; // Als je vooruit gaat, begin bij de eerste kaart
+
+  updateCarousel();
+}
+
+function updateCarousel() {
+  const angle = -index * angleIncrement; // Draai de carousel op basis van de huidige index
+  carousel.style.transform = `rotateY(${angle}deg)`;
+}
+
+// Lightbox functionaliteit
+function openLightbox(imageSrc) {
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImage = document.getElementById("lightbox-img");
+
+  lightboxImage.src = imageSrc;
+  lightbox.style.display = "flex"; // Toon de lightbox
+}
+
+function closeLightbox() {
+  const lightbox = document.getElementById("lightbox");
+  lightbox.style.display = "none"; // Verberg de lightbox
+}
+
+</script>
+
+<footer class="footer">
+  <div class="footer__addr">
+        <img src="logo.png" alt="">
+        <h2>Address</h2>
+        <address>
+              IIEST, shibpur<br>
+              Howrah, West Bengal, 711103
+        </address>
+  </div>
+
+  <ul class="footer__nav">
+        <li class="nav__item">
+              <h2 class="nav__title">Company</h2>
+
+              <ul class="nav__ul">
+                    <li>
+                          <a href="/">Home</a>
+                    </li>
+
+                    <li>
+                          <a href="/events.html">Events</a>
+                    </li>
+
+                    <li>
+                          <a href="/team.html">team</a>
+                    </li>
+
+                    <li>
+                          <a href="/gallary.html">Gallary</a>
+                    </li>
+
+              </ul>
+        </li>
+
+        <li class="nav__item ">
+              <h2 class="nav__title">Legal</h2>
+
+              <ul class="nav__ul">
+                    <li>
+                          <a href="mailto:iiests.edc@gmail.com">Help</a>
+                    </li>
+
+                    <li>
+                          <a href="mailto:iiests.edc@gmail.com">Contact</a>
+                    </li>
+
+                    <li>
+                          <a href="mailto:iiests.edc@gmail.com">Partnership</a>
+                    </li>
+
+                    <li>
+                          <a href="mailto:iiests.edc@gmail.com">Privacy Policy</a>
+                    </li>
+
+
+              </ul>
+        </li>
+
+        <li class="nav__item">
+              <h2 class="nav__title">Socials</h2>
+
+              <ul class="nav__ul">
+                    <li>
+                          <a href="https://www.linkedin.com/company/edciiests/">LinkedIn</a>
+                    </li>
+
+                    <li>
+                          <a
+                                href="https://www.instagram.com/edc.iiests/profilecard/?igsh=MTBpd2dkNDFwbXFybg==">Facebook</a>
+                    </li>
+
+                    <li>
+                          <a
+                                href="https://www.instagram.com/edc.iiests/profilecard/?igsh=MTBpd2dkNDFwbXFybg==">instagram</a>
+                    </li>
+              </ul>
+        </li>
+  </ul>
+
+  <div class="legal">
+        <p>Copyright EDC IIEST. All rights reserved 2024</p>
+
+        <div class="legal__links">
+              <span>Designed with expertise by <a href="https://www.linkedin.com/in/harshrjn/"
+                          style="color: #242424; font-size: 12px;">WEB TEAM.</a></span>
+        </div>
+  </div>
+</footer>
+  
+
+
+ 
+  <!-- lazy loading -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const lazyImages = document.querySelectorAll('img.lazy-load');
+
+      if ('IntersectionObserver' in window) {
+        let imageObserver = new IntersectionObserver((entries, observer) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              let img = entry.target;
+
+              if (img.dataset.src) {
+                console.log(`Loading image: ${img.dataset.src}`);
+                img.src = img.dataset.src;
+                observer.unobserve(img);
+              } else {
+                console.error('Error: data-src is missing for image:', img);
+              }
+            }
+          });
+        });
+
+        lazyImages.forEach(image => {
+          imageObserver.observe(image);
+        });
+
+      } else {
+        console.error('IntersectionObserver not supported in this browser.');
+
+        lazyImages.forEach(img => {
+          if (img.dataset.src) {
+            console.log(`Loading image (no observer): ${img.dataset.src}`);
+            img.src = img.dataset.src;
+            img.classList.remove('lazy-load');
+          } else {
+            console.error('Error: data-src is missing for image:', img);
+          }
+        });
+      }
+    });
+  </script>
+
+  <script>
+  const offset = window.innerHeight/2
+  const box1 = document.getElementsByClassName("box1")[0];
+  box1.classList.add('scrollBox');
+  window.addEventListener('scroll', () => {
+    const box1 = document.getElementsByClassName("box1")[0];
+    const box2 = document.getElementsByClassName("box2")[0];
+    const box3 = document.getElementsByClassName("box3")[0];
+    const box4 = document.getElementsByClassName("box4")[0];
+    const box5 = document.getElementsByClassName("box5")[0];
+   
+    const rect1 = box1.getBoundingClientRect()
+    const rect2 = box2.getBoundingClientRect()
+    const rect3 = box3.getBoundingClientRect()
+    const rect4 = box4.getBoundingClientRect()
+    const rect5 = box5.getBoundingClientRect()
+     
+    if (rect1.top < offset && rect1.top > -offset ) { 
+        box1.classList.add('scrollBox');
+    } else {
+        box1.classList.remove('scrollBox');
+    }
+    if (rect2.top < offset && rect2.top > -offset ) { 
+        box2.classList.add('scrollBox');
+    } else {
+        box2.classList.remove('scrollBox');
+    }
+    if (rect3.top < offset && rect3.top > -offset) { 
+        box3.classList.add('scrollBox');
+    } else {
+        box3.classList.remove('scrollBox');
+    }
+    if (rect4.top < offset && rect4.top > -offset ) { 
+        box4.classList.add('scrollBox');
+    } else {
+        box4.classList.remove('scrollBox');
+    }
+    if (rect5.top < offset ) { 
+        box5.classList.add('scrollBox');
+    } else {
+        box5.classList.remove('scrollBox');
+    }
+});
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="nav.js"></script>
+  <script src="carousel.js"></script>
+
+
+
+
+</body>
+</html>
